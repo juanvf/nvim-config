@@ -1,6 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
   {
@@ -48,5 +49,5 @@ return {
       -- Make it work with JSX/TSX
       require("nvim-autopairs").add_rules(require("nvim-autopairs.rules.endwise-lua"))
     end,
-  }
+  },
 }
